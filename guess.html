@@ -92,4 +92,13 @@
             } else if (userGuess > secretNumber) {
                 document.getElementById('result').innerText = `Too high! Try again. Attempts: ${attempts}`;
             } else {
-                document.getElementById('result').inner
+                document.getElementById('result').innerText = `Congratulations! You guessed the number in ${attempts} attempts.`;
+                document.getElementById('new-game-btn').style.display = 'inline-block';
+            }
+        }
+
+        // Start a new game when the page loads
+        window.onload = newGame;
+    </script>
+</body>
+</html>
